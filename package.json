@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jordy Dehaes",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.0",
