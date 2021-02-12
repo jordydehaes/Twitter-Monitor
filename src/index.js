@@ -8,14 +8,20 @@ dotenv.config();
 
 const discordClient = new Discord.Client();
 
+const twitterAccount = "Jordy_BE_";
 let latestTweet = 0;
 let newTweet = 1;
 let firstTweet = true;
 
+const startMonitor = () => {
+  console.log(chalk.bold.rgb(246, 255, 0)("Starting twitter monitor... ⚡"));
+  setInterval(checkTweets, 1000);
+}
+
 const checkTweets = async () => {
   console.log(chalk.blueBright("Monitoring... 🔎"));
   const data = await client.tweets.statusesUserTimeline({
-    screen_name: "KodaiAIO",
+    screen_name: twitterAccount,
     count: 1,
     include_rts: false,
     exclude_replies: true,
@@ -66,9 +72,5 @@ const sendEmbed = async (tweetData) => {
   await channel.send(newTweetEmbed);
 };
 
-discordClient.once("ready", () => {
-  console.log(chalk.bold.rgb(246, 255, 0)("Starting twitter monitor... ⚡"));
-  setInterval(checkTweets, 1000);
-});
-
 discordClient.login(process.env.BOT_TOKEN);
+discordClient.once("ready", startMonitor);
