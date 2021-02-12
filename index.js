@@ -28,11 +28,7 @@ const checkTweets = async () => {
       return;
     } else {
       console.log(
-        chalk.bold.rgb(
-          30,
-          255,
-          0
-        )(`New tweet (${newTweet[0].id}) found 🤑! Sent to discord. `)
+        chalk.bold.rgb(30, 255, 0)(`New tweet (${newTweet[0].id}) found 🤑! Sent to discord. `)
       );
       sendEmbed(newTweet);
       latestTweet = newTweet[0].id;
