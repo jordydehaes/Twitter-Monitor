@@ -1,20 +1,22 @@
 import dotenv from "dotenv";
-import { client } from "./client.js";
+import Discord from "discord.js";
 import chalk from "chalk";
 import patch from "log-timestamp";
-import Discord from "discord.js";
 import { createWorker } from 'tesseract.js';
+import { client } from "./client.js";
 
 dotenv.config();
 const discordClient = new Discord.Client();
 
 const twitterAccount = "PrismAIO";
+let channel;
 let latestTweet = 0;
 let newTweet = 1;
 let firstTweet = true;
 
 const startMonitor = () => {
   console.log(chalk.bold.rgb(246, 255, 0)("Starting twitter monitor... ⚡"));
+  channel = discordClient.channels.cache.get("809499372307611728");
   setInterval(checkTweets, 1000);
 }
 
@@ -51,7 +53,6 @@ const checkTweets = async () => {
 };
 
 const sendEmbed = async (tweetData) => {
-  const channel = discordClient.channels.cache.get("809499372307611728");
   const newTweetEmbed = new Discord.MessageEmbed()
     .setColor("#03bafc")
     .setTitle("Tweet URL")
@@ -79,8 +80,6 @@ const sendEmbed = async (tweetData) => {
 };
 
 const sendImageEmbed = async (tweetData) => {
-  const channel = discordClient.channels.cache.get("809499372307611728");
-
   const newTweetEmbed = new Discord.MessageEmbed()
     .setColor("#03bafc")
     .setImage(tweetData[0].extended_entities.media[0].media_url)
@@ -94,8 +93,6 @@ const sendImageEmbed = async (tweetData) => {
 };
 
 const sendOCREmbed = async (OCR) => {
-  const channel = discordClient.channels.cache.get("809499372307611728");
-
   const newTweetEmbed = new Discord.MessageEmbed()
     .setColor("#03bafc")
     .addField('**OCR**', OCR)
