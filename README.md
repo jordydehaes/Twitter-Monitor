@@ -1,8 +1,8 @@
-## Twitter-Monitor
+# Twitter-Monitor
 
 - Application that monitors a certain Twitter account for new tweets.
 
-# Instructions: NPM Modules
+## Instructions: NPM Modules
 
 - npm i chalk
 - npm i discord.js
@@ -13,7 +13,7 @@
 - npm i twitter-api-client
 - npm i fs
 
-# Files: API + Discord bot token
+## Files: API + Discord bot token
 
 - touch .env => define Twitter API keys and Discord bot token in the following format
 
