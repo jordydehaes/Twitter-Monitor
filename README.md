@@ -15,7 +15,7 @@
 
 # Files: API + Discord bot token
 
-- touch .env => define Twitter API keys and Discord bot token i the following format
+- touch .env => define Twitter API keys and Discord bot token in the following format
 
 API_KEY=<br>
 API_SECRET_KEY=<br>
