@@ -1,6 +1,6 @@
 # Twitter-Monitor
 
-- Application that monitors a certain Twitter account for new tweets.
+Application that monitors a certain Twitter account for new tweets.
 
 ## Instructions: NPM Modules
 
