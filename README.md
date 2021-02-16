@@ -17,10 +17,10 @@
 
 - touch .env => define Twitter API keys and Discord bot token i the following format
 
-API_KEY=
-API_SECRET_KEY=
-ACCESS_TOKEN=
-ACCESS_TOKEN_SECRET=
-BOT_TOKEN=
+API_KEY=<br>
+API_SECRET_KEY=<br>
+ACCESS_TOKEN=<br>
+ACCESS_TOKEN_SECRET=<br>
+BOT_TOKEN=<br>
 
 - Save file
