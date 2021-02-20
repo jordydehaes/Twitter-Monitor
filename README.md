@@ -3,7 +3,7 @@
 Application that monitors a certain Twitter account and sends out a discord embed whenever a new tweet gets tweeted by that account.<br>
 OCR is also supported.
 
-## Instructions: NPM Modules
+## Node Modules
 ```
 npm i chalk
 npm i discord.js
@@ -14,9 +14,9 @@ npm i twitter
 npm i twitter-api-client
 npm i fs
 ```
-## Files: API + Discord bot token
+## Files
 
-Create a file named .env and define the following things in the format below:
+Create a file named `.env` and define the following things in the format below:
 ```
 API_KEY=yourTwitterAPI
 API_SECRET_KEY=yourTwitterAPISecret
@@ -24,4 +24,4 @@ ACCESS_TOKEN=yourTwitterAccessToken
 ACCESS_TOKEN_SECRET=yourTwitterAccessTokenScret
 BOT_TOKEN=yourDiscordBotToken
 ```
-- Save the file
+Save the file
