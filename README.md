@@ -16,12 +16,12 @@ npm i fs
 ```
 ## Files: API + Discord bot token
 
-- touch .env => define Twitter API keys and Discord bot token in the following format
+Create a file named .env and define the following things in the format below:
 ```
-API_KEY=<br>
-API_SECRET_KEY=<br>
-ACCESS_TOKEN=<br>
-ACCESS_TOKEN_SECRET=<br>
-BOT_TOKEN=<br>
+API_KEY=yourTwitterAPI
+API_SECRET_KEY=yourTwitterAPISecret
+ACCESS_TOKEN=yourTwitterAccessToken
+ACCESS_TOKEN_SECRET=yourTwitterAccessTokenScret
+BOT_TOKEN=yourDiscordBotToken
 ```
-- Save file
+- Save the file
