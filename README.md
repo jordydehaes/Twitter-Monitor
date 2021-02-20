@@ -1,6 +1,7 @@
 # Twitter-Monitor
 
-Application that monitors a certain Twitter account for new tweets.
+Application that monitors a certain Twitter account and sends out a discord embed whenever a new tweet gets tweeted by that account.<br>
+OCR is also supported.
 
 ## Instructions: NPM Modules
 ```
