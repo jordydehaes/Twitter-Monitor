@@ -1,26 +1,27 @@
-## Twitter-Monitor
+# Twitter-Monitor
 
-- Application that monitors a certain Twitter account for new tweets.
+Application that monitors a certain Twitter account and sends out a discord embed whenever a new tweet gets tweeted by that account.<br>
+OCR is also supported.
 
-# Instructions: NPM Modules
+## Node Modules
+```
+npm i chalk
+npm i discord.js
+npm i dotenv
+npm i log-timestamp
+npm i tesseract.js
+npm i twitter
+npm i twitter-api-client
+npm i fs
+```
+## Files
 
-- npm i chalk
-- npm i discord.js
-- npm i dotenv
-- npm i log-timestamp
-- npm i tesseract.js
-- npm i twitter
-- npm i twitter-api-client
-- npm i fs
-
-# Files: API + Discord bot token
-
-- touch .env => define Twitter API keys and Discord bot token in the following format
-
-API_KEY=<br>
-API_SECRET_KEY=<br>
-ACCESS_TOKEN=<br>
-ACCESS_TOKEN_SECRET=<br>
-BOT_TOKEN=<br>
-
-- Save file
+Create a file named `.env` and define the following things in the format below:
+```
+API_KEY=yourTwitterAPI
+API_SECRET_KEY=yourTwitterAPISecret
+ACCESS_TOKEN=yourTwitterAccessToken
+ACCESS_TOKEN_SECRET=yourTwitterAccessTokenScret
+BOT_TOKEN=yourDiscordBotToken
+```
+Save the file
