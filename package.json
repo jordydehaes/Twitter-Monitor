@@ -1,5 +1,5 @@
 {
-  "name": "DiscordTwitter",
+  "name": "twitter-monitor",
   "version": "1.0.0",
   "description": "Application that monitors a certain Twitter account for new tweets.",
   "type": "module",
