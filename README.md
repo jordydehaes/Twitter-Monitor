@@ -3,11 +3,11 @@
 Application that monitors a certain Twitter account and sends out a discord embed whenever a new tweet gets tweeted by that account.<br>
 OCR is also supported.
 
-## Install Node Modules
+### Install Node Modules
 ```
 npm i install
 ```
-## Files
+### Create necessary files
 
 Create a file named `.env` and define the following things in the format below:
 ```
