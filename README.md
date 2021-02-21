@@ -4,11 +4,12 @@ Application that monitors a certain Twitter account and sends out a discord embe
 OCR is also supported.
 
 ### Install Node Modules
+---
 ```
 npm i install
 ```
 ### Create necessary files
-
+---
 Create a file named `.env` and define the following things in the format below:
 ```
 API_KEY=yourTwitterAPI
