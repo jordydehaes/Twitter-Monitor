@@ -5,8 +5,9 @@ OCR is also supported.
 
 ## Install Node Modules
 ```
-npm i install
+npm install
 ```
+
 ## Create necessary files
 Create a file named `.env` and define the following things in the format below:
 ```
@@ -16,4 +17,3 @@ ACCESS_TOKEN=yourTwitterAccessToken
 ACCESS_TOKEN_SECRET=yourTwitterAccessTokenScret
 BOT_TOKEN=yourDiscordBotToken
 ```
-Save the file
