@@ -1,3 +1,4 @@
 .env
-eng.traineddata
+src/ocr.json
 node_modules/
+package-lock.json
